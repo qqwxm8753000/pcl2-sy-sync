@@ -1,0 +1,157 @@
+<local:MyHint Text="注：此功能并未完善！" Margin="0,0,0,8" IsWarn="True" />
+    <Grid>
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1*" />
+        <ColumnDefinition Width="1.6*" />
+        </Grid.ColumnDefinitions>
+           <local:MyCard Title="名片" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="0">
+                <StackPanel Margin="25,40,23,15" >
+                    <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                        <TextBlock  Margin="0,0,0,10" FontSize="20" Text="名字 ：" HorizontalAlignment="Left" />
+                        <TextBlock  Margin="0,3,0,10" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
+                        Text="仕洋SY" />
+                    </StackPanel>
+
+
+                   <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                       <TextBlock Margin="0,0,0,10" FontSize="20" Text="简介 ：" HorizontalAlignment="Left" />
+                       <TextBlock Margin="0,3,0,10" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
+                                           Text="仕洋Team创始人 粉丝群：835661493" />
+                   </StackPanel>
+
+                <local:MyButton Width="200"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                 Text="复制群号" EventType="复制文本" EventData="835661493" />
+                <TextBlock Margin="0,0,0,10" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
+                Text="快捷功能 ：" />
+                <local:MyButton Margin="0,4,0,8" Width="200" Height="35" HorizontalAlignment="Center" ColorType="Highlight"
+                    Text="打开记事本" EventType="打开文件" EventData="notepad.exe" />
+                <local:MyButton Margin="0,4,0,8" Width="200" Height="35" HorizontalAlignment="Center" ColorType="Highlight"
+                    Text="打开 PCL 日志" EventType="打开文件" EventData="Log1.txt" />
+                <local:MyButton Margin="0,4,0,8" Width="200" Height="35" HorizontalAlignment="Center" ColorType="Highlight"
+                    Text="打开画图" EventType="打开文件" EventData="mspaint.exe" />
+               </StackPanel>
+           </local:MyCard>
+
+          <local:MyCard Title="往期视频" Margin="20,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
+            <StackPanel Margin="25,40,23,15" >
+                <TextBlock Margin="0,0,0,10" FontSize="20" Text="置顶 ：" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"/>
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="什么？？？？？这个team在招人？还这么简单？？？" Info="置顶视频" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1xh4y137pt/" Type="Clickable" />
+
+                <TextBlock Margin="0,0,0,10" FontSize="20" Text="视频 ：" HorizontalAlignment="Left" />
+                <local:MyHint IsWarn="False" Margin="0,0,0,10" Text="注意 ：最上面的是最新的" HorizontalAlignment="Left" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="《新人UP联机 3》都疯啦！！啊啊啊啊！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV15W4y1f7Di/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="新人UP联机，第二期！终于来啦！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1mk4y1T7uZ/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="新人UP联机生存 第1期 《仕洋流浪记》" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1xX4y1p7rn/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="pcl2的自定义主页！来啦！！！！！！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV11g4y1P7Ui/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="《花 太阳 彩虹 你》MV" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1TL411B7QK/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="【法老】《ghost face》真的泰裤辣！！！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1Xm4y1h7bM/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="1.19.2生存（3）NEW" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1514y1Z7xq/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="什么？小潮的秘密？" EventType="打开网页" EventData="https://www.bilibili.com/video/BV12L411S7tU/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="1.19.2生存2" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1AM4y1z7y3/" Type="Clickable" />
+
+                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="新人UP有点紧张" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1jM4y167oJ/" Type="Clickable" />
+            </StackPanel>
+         </local:MyCard>
+    </Grid>
+
+<Grid>
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1.6*" />
+        <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <local:MyCard Title="下载站" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+            <StackPanel Margin="25,40,23,15" >
+                <TextBlock  Margin="0,3,0,10" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
+                Text=""/>
+            </StackPanel>
+
+
+
+
+
+
+
+       </local:MyCard>
+</Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Background：调整背景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ - FontWeight：设置为 Bold 时，文字加粗
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+Image（图片）：
+ - Source：要显示的图片的网址
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）（使用时，CanSwap 属性需为 False）
+
+local:MyHint（提示条）：
+- Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyListItem（列表项）：
+ - Logo：列表项的图标（所指定的可以是链接也可以是文件路径）
+ - Title：列表项的大标题
+ - Info：列表项的详细信息，它将会以灰色显示在大标题下方
+ - Type：若留空仅单纯展示信息，设置为 Clickable 触发相应活动
+
+-->
+
+
+
+

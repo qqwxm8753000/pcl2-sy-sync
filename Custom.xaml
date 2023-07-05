@@ -1,0 +1,222 @@
+﻿<local:MyCard Title=" 这是仕洋team官方的主页设置，感谢您的使用！磕一个！" Margin="0,0,0,15" Height="35" CanSwap="False" IsSwaped="False"/>
+   <local:MyCard Title="关于我们" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+        <StackPanel Margin="25,40,23,15" >
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
+                                Text="成立时间 ：仕洋team成立于2023/3/14" />
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+
+            <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,0,10,0"  Height="35" Padding="13,0,13,0"
+                            Text="复制服务器地址" EventType="复制文本" EventData="hp.iuqaq.com:19133" ToolTip="1.20.1 仕洋team官方服务器IP：hp.iuqaq.com:19133"/>
+           </StackPanel>
+           <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
+                     Text="进入仕洋SY B站主页" EventType="打开网页" EventData="https://space.bilibili.com/1151723944?spm_id_from=333.1007.0.0"/>
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                     Text="仕洋team审核表" EventType="打开网页" EventData="https://wj.qq.com/s2/12562055/cffc"/>
+           </StackPanel>
+           <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                     Text="赠言" EventType="弹出窗口" EventData="赠言|仕洋team爱你们呦！" />
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Red"
+                     Text="进入仕洋team爱发电" EventType="打开网页" EventData="https://afdian.net/a/sy0519"/>
+           </StackPanel>
+         </StackPanel>
+    </local:MyCard>
+
+<local:MyCard Title="网站" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15" >
+            <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/Grass.png" Title="我的世界" Info="我的世界官网"
+                            EventType="打开网页" EventData="https://www.minecraft.net/zh-hans" Type="Clickable"/>
+            <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="哔哩哔哩" Info="哔哩哔哩官网"
+                         EventType="打开网页" EventData="https://www.bilibili.com/" Type="Clickable"/>
+            <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.baidu.com/favicon.ico"
+                         Title="百度" Info="百度官网" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable"/>                                                      
+            <local:MyListItem Margin="-5,0,-5,8" Logo="https://store.steampowered.com/favicon.ico" Title="Steam" Info="Steam官网"
+                EventType="打开网页" EventData="https://store.steampowered.com/" Type="Clickable"/>
+            <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png"
+                Title="仕洋team服务器官网" Info="这是服务器官网哦" EventType="打开网页"
+                EventData="https://shiyang0510.github.io/Shiyang-s-electric-clothing-SEC/" Type="Clickable"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="小功能" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15" >
+            <local:MyHint Text="仅供娱乐，切勿上火！"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                 <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                            Text="今日人品" EventType="今日人品" />
+                 <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,4,10,0"  Height="35" Padding="13,0,13,0" ColorType="Red"
+                            Text="复制惊喜" EventType="复制文本" EventData="/execute as @a at @s run summon Creeper ~ ~2 ~" ToolTip="会在你的好基友头上召唤两只可爱的苦力怕怕哦！"/>
+           </StackPanel>
+           <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35"  Padding="13,0,13,0" ColorType="Highlight"
+                     Text="清理垃圾" EventType="清理垃圾"/>
+
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,4,10,0" Height="35" Padding="13,0,13,0" 
+                     Text="下载8K色图" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1VU4y1L7x7/"/>
+           </StackPanel>
+           <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Red"
+                     Text="千万别点" EventType="刷新主页"  />
+                <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Red" 
+                     Text="魔镜"  EventType="弹出窗口" EventData="哦!我的主人|你可真是 : !@#$%%$@#%^&#xA;(语言指导 ：赵德柱)"/>
+           </StackPanel>
+         </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="学习专区" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15" >
+        <local:MyHint Text="好好学习，天天向上！" Margin="0,0,0,8" IsWarn="False" />
+             <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.baidu.com/favicon.ico"
+             Title="百度" Info="百度官网" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable"/>
+             <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="20" Text="蜀道难   唐/李白" />
+             <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
+             Text="      噫吁嚱，危乎高哉！蜀道之难，难于上青天！蚕丛及鱼凫，开国何茫然！尔来四万八千岁，不与秦塞通人烟。西当太白有鸟道，可以横绝峨眉巅。地崩山摧壮士死，然后天梯石栈相钩连。上有六龙回日之高标，下有冲波逆折之回川。黄鹤之飞尚不得过，猿猱欲度愁攀援。青泥何盘盘，百步九折萦岩峦。扪参历井仰胁息，以手抚膺坐长叹。
+                        问君西游何时还？畏途巉岩不可攀。但见悲鸟号古木，雄飞雌从绕林间。又闻子规啼夜月，愁空山。蜀道之难，难于上青天，使人听此凋朱颜！连峰去天不盈尺，枯松倒挂倚绝壁。飞湍瀑流争喧豗，砯崖转石万壑雷。其险也如此，嗟尔远道之人胡为乎来哉！
+                        剑阁峥嵘而崔嵬，一夫当关，万夫莫开。所守或匪亲，化为狼与豺。朝避猛虎，夕避长蛇；磨牙吮血，杀人如麻。锦城虽云乐，不如早还家。蜀道之难，难于上青天，侧身西望长咨嗟！" />
+             <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+             Text="本篇解析" EventType="打开网页" EventData="https://m.shicimingju.com/chaxun/list/26317.html"/>
+
+             <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="20" Text="桃花源记   东晋/陶渊明" />
+             <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
+             Text="      晋太元中，武陵人捕鱼为业。缘溪行，忘路之远近。忽逢桃花林，夹岸数百步，中无杂树，芳草鲜美，落英缤纷。渔人甚异之，复前行，欲穷其林。
+
+                   林尽水源，便得一山，山有小口，仿佛若有光。便舍船，从口入。初极狭，才通人。复行数十步，豁然开朗。土地平旷，屋舍俨然，有良田、美池、桑竹之属。阡陌交通，鸡犬相闻。其中往来种作，男女衣着，悉如外人。黄发垂髫，并怡然自乐。
+
+                   见渔人，乃大惊，问所从来。具答之。便要还家，设酒杀鸡作食。村中闻有此人，咸来问讯。自云先世避秦时乱，率妻子邑人来此绝境，不复出焉，遂与外人间隔。问今是何世，乃不知有汉，无论魏晋。此人一一为具言所闻，皆叹惋。余人各复延至其家，皆出酒食。停数日，辞去。此中人语云：“不足为外人道也。”
+
+                   既出，得其船，便扶向路，处处志之。及郡下，诣太守，说如此。太守即遣人随其往，寻向所志，遂迷，不复得路。
+
+                   南阳刘子骥，高尚士也，闻之，欣然规往。未果，寻病终，后遂无问津者。" />
+             <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+             Text="本篇解析" EventType="打开网页" EventData="https://so.gushiwen.cn/shangxi_2178.aspx"/>
+
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="20" Text="将进酒   唐/李白" />
+            <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Foreground="{DynamicResource ColorBrush2}"
+                         Text="君不见，黄河之水天上来，奔流到海不复回。
+
+                                     君不见，高堂明镜悲白发，朝如青丝暮成雪。
+
+                                     人生得意须尽欢，莫使金樽空对月。
+
+                                     天生我材必有用，千金散尽还复来。
+
+                                     烹羊宰牛且为乐，会须一饮三百杯。
+
+                                     岑夫子，丹丘生，将进酒，杯莫停。
+
+                                     与君歌一曲，请君为我倾耳听。
+
+                                     钟鼓馔玉不足贵，但愿长醉不愿醒。
+
+                                     古来圣贤皆寂寞，惟有饮者留其名。
+
+                                     陈王昔时宴平乐，斗酒十千恣欢谑。
+
+                                     主人何为言少钱，径须沽取对君酌。
+
+                                     五花马，千金裘，呼儿将出换美酒，与尔同销万古愁。" />
+            <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                         Text="本篇解析" EventType="打开网页" EventData="https://so.gushiwen.cn/shangxi_1217.aspx"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="下载" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
+    <StackPanel Margin="25,40,23,15">
+        <local:MyHint IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载（如百度网盘）" />
+        <StackPanel Orientation="Horizontal" Height="50" Width="800">
+            <TextBlock Text="下载链接：" VerticalAlignment="Center" />
+            <local:MyTextBox Margin="3" HorizontalAlignment="Center" Name="web" Height="30" Width="380" />
+        </StackPanel>
+        <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载"
+        Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Center" Padding="13,0,13,0" ColorType="Highlight"/>
+    </StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="日历" Margin="0,0,0,20" CanSwap="True" IsSwaped="True">
+    <Grid UseLayoutRounding="True">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="215"></ColumnDefinition>
+            <ColumnDefinition Width="5"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <GridSplitter Grid.Column="1" Width="5" Margin="0,0,0,20" Opacity="0"
+            VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
+        <Calendar  HorizontalAlignment="Left" Margin="16,30,0,10" Grid.Row="0" Grid.Column="0"></Calendar>
+        <InkCanvas EditingMode="Ink" HorizontalAlignment="Right" Margin="0,30,15,10" Grid.Row="0" Grid.Column="2"
+            Width="1024" MaxHeight="768" MinHeight="100" Background="{DynamicResource ColorBrush5}">
+        </InkCanvas>
+    </Grid>
+</local:MyCard>
+
+<local:MyCard Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15" >
+        <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1"
+        Title="主页" Info="仕洋B站主页" EventType="打开帮助" EventData="D:\PCL\Help\子页面.JSON" Type="Clickable"/>
+    </StackPanel>
+</local:MyCard>
+
+
+
+
+
+
+<!-- 
+
+全部通用的属性：
+ - Width、Height：设置宽度与高度
+ - ToolTip：设置鼠标指向时的提示文本
+ - Background：调整背景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - Margin：调整外边距（格式为 左,上,右,下。例如 Margin="0,0,0,2" 即为 2 单位的下边距）
+
+TextBlock（纯文本）：
+ - Text：设置显示的文本（如果要使用引号等特殊字符，自行百度 XAML 转义）
+ - TextWrapping：开启自动换行
+ - FontSize：设置字号
+ - FontWeight：设置为 Bold 时，文字加粗
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+Image（图片）：
+ - Source：要显示的图片的网址
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyCard（卡片）：
+ - Title：设置显示的标题文本
+ - CanSwap：这张卡片是否可以折叠，True 为是，False 为否
+ - IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）（使用时，CanSwap 属性需为 False）
+
+local:MyHint（提示条）：
+ - Text：设置显示的文本（&#xA; 代表换行）
+ - IsWarn：设置为 True 代表警告样式，False 代表提示样式
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyButton（按钮）：
+ - Text：设置显示的文本
+ - Padding：设置内边距，格式与 Margin 一致
+ - ColorType：设置颜色主题（Highlight 为当前启动器的主题颜色，Red 为红色，默认为黑色）
+ - EventType、EventData：触发特定事件
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyTextButton（文本按钮）：
+ - Text：设置显示的文本
+ - EventType、EventData：触发特定事件
+ - Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）
+ - HorizontalAlignment：设置对齐方式（Left、Center、Right）
+
+local:MyListItem（列表项）：
+ - Logo：列表项的图标（所指定的可以是链接也可以是文件路径）
+ - Title：列表项的大标题
+ - Info：列表项的详细信息，它将会以灰色显示在大标题下方
+ - Type：若留空仅单纯展示信息，设置为 Clickable 触发相应活动
+
+-->
+
+
+
