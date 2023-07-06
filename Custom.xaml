@@ -1,3 +1,4 @@
+﻿<local:MyCard Title=" 这是仕洋SY的主页设置，感谢您的使用！关注我！" Margin="0,0,0,15" Height="35" CanSwap="False" IsSwaped="False"/>
    <local:MyCard Title="关于我们" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
         <StackPanel Margin="25,40,23,15" >
             <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
@@ -154,6 +155,7 @@
 <local:MyCard Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
     <StackPanel Margin="25,40,23,15" >
         <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1"
+        Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="D:\PCL\Help\子页面.JSON" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
 
