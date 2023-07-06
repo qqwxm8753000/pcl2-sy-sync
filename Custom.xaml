@@ -8,7 +8,7 @@
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
             <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Highlight"
             Text="刷新主页" EventType="刷新主页"  />
-            <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,0,10,0"  Height="35" Padding="13,0,13,0"
+            <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,4,10,0"  Height="35" Padding="13,0,13,0"
                             Text="复制服务器地址" EventType="复制文本" EventData="hp.iuqaq.com:19133" ToolTip="1.20.1 仕洋team官方服务器IP：hp.iuqaq.com:19133"/>
            </StackPanel>
            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
@@ -161,11 +161,47 @@
         Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="D:\PCL\Help\子页面.JSON" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
-<local:MyHint Text="所有页面均为仕洋SY制作并维护 最后更新2023/7/6 （此为第一版正式版，下次更新会有日志）" Margin="0,0,0,8" IsWarn="True" />
+ <Grid>
+        <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="1*" />
+        <ColumnDefinition Width="1.6*" />
+        </Grid.ColumnDefinitions>
+        <local:MyCard Title="主页信息" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="0" >
+                        <StackPanel Margin="25,40,23,15" >
+                                <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                                    <TextBlock  Margin="0,0,0,5" FontSize="20" Text="维护/制作 ：" HorizontalAlignment="Left" />
+                                    <TextBlock  Margin="0,3,0,5" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
+                                    Text="仕洋SY" />
+                                </StackPanel>
+                               <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                                   <TextBlock Margin="0,0,0,5" FontSize="20" Text="最后更新 ：" HorizontalAlignment="Left" />
+                                   <TextBlock Margin="0,3,0,5" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
+                               Text="2023/7/6" />
+                               </StackPanel>
+                               <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                                   <TextBlock Margin="0,0,0,5" FontSize="20" Text="版本 ：" HorizontalAlignment="Left" />
+                                   <TextBlock Margin="0,3,0,5" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
+                                    Text=" 1.2 " />
+                               </StackPanel>
+                            <local:MyButton Width="200"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                             Text="反馈至QQ群" EventType="复制文本" EventData="835661493" ToolTip="因技术原因只好反馈至QQ" />
+                       </StackPanel>
+        </local:MyCard>
 
-
-
-
+        <local:MyCard Title="更新日志" Margin="8,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
+            <StackPanel Margin="25,40,23,15" >
+                <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="18" Text="关于我们--第一行按钮的复制服务器地址" HorizontalAlignment="Left" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="18" Text="新增页面信息" HorizontalAlignment="Left" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="18" Text="新增反馈入口--反馈入口是QQ群" HorizontalAlignment="Left" />
+                </StackPanel>
+            </StackPanel>
+        </local:MyCard>
+</Grid>
 
 
 <!-- 
