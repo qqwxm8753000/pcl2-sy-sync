@@ -1,4 +1,56 @@
-<local:MyHint Text="如你所见，仕洋这个B还没更新" Margin="0,0,0,8" IsWarn="True" />
+<local:MyHint Text="如你所见，仕洋这个B还没更新" Margin="0,0,0,8" IsWarn="False" />
+<local:MyCard Title="欢迎学习由仕洋SY提供的自定义主页教学！" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+     <StackPanel Margin="25,40,23,15" >
+         <StackPanel Orientation="Horizontal" Height="25" Width="800">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="学前须知：本篇教学仅供参考！也可以去看看龙猫的教学！" />
+         </StackPanel>
+         <StackPanel Orientation="Horizontal" Height="25" Width="800">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="首先你要有一个好的编程软件，例如我正在用的：IDEA"  />
+         </StackPanel>
+         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+              <local:MyButton Text="下载" Width="200" Margin="0,0,0,10" Height="35" HorizontalAlignment="Center" ColorType="Highlight" EventType="下载文件" EventData="https://www.jetbrains.com/zh-cn/idea/download" />
+          </StackPanel>
+         <StackPanel Orientation="Horizontal" Height="25" Width="800">
+            <TextBlock  TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="当然 一定要把此文件下载后慢慢理解 否则您大概率是听不懂的（除非您的想象力超群或者您只是好奇）" />
+         </StackPanel>
+         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <local:MyButton Text="下载本篇代码" Width="200" Margin="0,0,0,10" Height="35" HorizontalAlignment="Center" ColorType="Highlight" EventType="下载文件" EventData="https://raw.githubusercontent.com/shiyang0510/pcl2-sy/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A22.xaml" />
+         </StackPanel>
+     </StackPanel>
+</local:MyCard>
+<local:MyCard Title="卡片" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" >
+    <StackPanel Margin="25,40,23,15">
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="卡片的代码为：local:MyCard"/>
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="- Title：设置显示的标题文本" Foreground="{DynamicResource ColorBrush2}" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="- CanSwap：这张卡片是否可以折叠，True 为是，False 为否" Foreground="{DynamicResource ColorBrush2}" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="- IsSwaped：这张卡片是否默认折叠，要求 CanSwap 必须为 True" Foreground="{DynamicResource ColorBrush2}" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="- Foreground：调整前景颜色（十六进制字符串，例如 #FF010203 代表 ARGB 中的 255,1,2,3。前两位代表不透明度，FF 为全不透明，00 为全透明）" Foreground="{DynamicResource ColorBrush2}" />
+        <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="- HorizontalAlignment：设置对齐方式（Left、Center、Right）（使用时，CanSwap 属性需为 False）" Foreground="{DynamicResource ColorBrush2}" />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" HorizontalAlignment="Left" Text="这是龙猫在教学文件中所说的 ( 我认为说的比《自定义主页与帮助XAML文件》还要具体 ) " />
+        <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" HorizontalAlignment="Left" Text="只要根据以上提示来做卡片一般是没什么问题的" />
+        <local:MyHint Margin="0,0,0,10" Text="你可别忘了，在每行代码的右括号前加上注释“/”"/>
+        <StackPanel Orientation="Horizontal" Height="25" Width="800">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="就像这样：" />
+            <Image HorizontalAlignment="Left" Source="https://github.com/shiyang0510/pcl2-sy/blob/main/QQ%E5%9B%BE%E7%89%8720230706225701.png?raw=true"/>
+        </StackPanel>
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="提示条" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" >
+    <StackPanel Margin="25,40,23,15">
+         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="提示条的代码为：local:MyHint"/>
+         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="{DynamicResource ColorBrush2}" FontSize="15" Text="- Text：设置显示的文本（“这个打不出来” 代表换行）"/>
+         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="{DynamicResource ColorBrush2}" FontSize="15" Text="- IsWarn：设置为 True 代表警告样式，False 代表提示样式"/>
+         <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="{DynamicResource ColorBrush2}" FontSize="15" Text="- HorizontalAlignment：设置对齐方式（Left、Center、Right）"/>
+         <local:MyHint Text="这是一个示范（红色提示条）" Margin="0,0,0,8" IsWarn="True"/>
+         <local:MyHint Text="这也是一个示范（蓝色提示条）" Margin="0,0,0,10" IsWarn="False"/>
+         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" HorizontalAlignment="Left" Text="还是内句话：只要根据以上提示来做提示条一般是没什么问题的" />
+         <local:MyHint Margin="0,0,0,10" Text="你可别忘了，在每行代码的右括号前加上注释“/”"/>
+                 <StackPanel Orientation="Horizontal" Height="25" Width="800">
+                     <TextBlock TextWrapping="Wrap" HorizontalAlignment="Left" Margin="0,0,0,10" FontSize="15" Text="就像这样：" />
+                     <Image HorizontalAlignment="Left" Source="https://github.com/shiyang0510/pcl2-sy/blob/main/QQ%E5%9B%BE%E7%89%8720230706225701.png?raw=true"/>
+                 </StackPanel>
+    </StackPanel>
+</local:MyCard>
 
 
 
