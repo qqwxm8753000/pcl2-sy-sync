@@ -122,10 +122,12 @@
 </local:MyCard>
 
 
-<local:MyCard Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+<local:MyCard Title="页面跳转" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
     <StackPanel Margin="25,40,23,15" >
         <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1"
         Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="D:\PCL\Help\子页面.JSON" Type="Clickable"/>
+        <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
+         Title="自定义主页教学" Info="由仕洋提供" EventType="打开帮助" EventData="D:\PCL\Help\子页面2.JSON" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
  <Grid>
@@ -169,6 +171,9 @@
                 <StackPanel Orientation="Horizontal" Height="25" Width="800">
                      <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Text="4.下架仕洋team服务器官网" HorizontalAlignment="Left" />
                 </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="25" Width="800">
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Text="5.更新自定义教学页面（未完工）" HorizontalAlignment="Left" />
+                                </StackPanel>
             </StackPanel>
         </local:MyCard>
 </Grid>
