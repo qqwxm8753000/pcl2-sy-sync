@@ -1,10 +1,13 @@
-﻿<local:MyCard Title=" 这是仕洋SY的主页设置，感谢您的使用！关注我！" Margin="0,0,0,15" Height="35" CanSwap="False" IsSwaped="False"/>
+﻿<local:MyCard Title=" 这是仕洋SY的主页设置，感谢您的使用！关注我！" Margin="0,0,0,15" Height="35" CanSwap="False" IsSwaped="False" />
+
    <local:MyCard Title="关于我们" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+
         <StackPanel Margin="25,40,23,15" >
             <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
                                 Text="成立时间 ：仕洋team成立于2023/3/14" />
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-
+            <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+            Text="刷新主页" EventType="刷新主页"  />
             <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,0,10,0"  Height="35" Padding="13,0,13,0"
                             Text="复制服务器地址" EventType="复制文本" EventData="hp.iuqaq.com:19133" ToolTip="1.20.1 仕洋team官方服务器IP：hp.iuqaq.com:19133"/>
            </StackPanel>
@@ -158,6 +161,7 @@
         Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="D:\PCL\Help\子页面.JSON" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
+<local:MyHint Text="所有页面均为仕洋SY制作并维护 最后更新2023/7/6 （此为第一版正式版，下次更新会有日志）" Margin="0,0,0,8" IsWarn="True" />
 
 
 
