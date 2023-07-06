@@ -36,9 +36,6 @@
                          Title="百度" Info="百度官网" EventType="打开网页" EventData="https://www.baidu.com/" Type="Clickable"/>                                                      
             <local:MyListItem Margin="-5,0,-5,8" Logo="https://store.steampowered.com/favicon.ico" Title="Steam" Info="Steam官网"
                 EventType="打开网页" EventData="https://store.steampowered.com/" Type="Clickable"/>
-            <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/RedstoneLampOn.png"
-                Title="仕洋team服务器官网" Info="这是服务器官网哦" EventType="打开网页"
-                EventData="https://shiyang0510.github.io/Shiyang-s-electric-clothing-SEC/" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
 
@@ -124,36 +121,6 @@
     </StackPanel>
 </local:MyCard>
 
-<local:MyCard Title="下载" Margin="0,0,0,15" CanSwap="True" IsSwaped="True">
-    <StackPanel Margin="25,40,23,15">
-        <local:MyHint IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载（如百度网盘）" />
-        <StackPanel Orientation="Horizontal" Height="50" Width="800">
-            <TextBlock Text="下载链接：" VerticalAlignment="Center" />
-            <local:MyTextBox Margin="3" HorizontalAlignment="Center" Name="web" Height="30" Width="380" />
-        </StackPanel>
-        <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载"
-        Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Center" Padding="13,0,13,0" ColorType="Highlight"/>
-    </StackPanel>
-</local:MyCard>
-
-<local:MyCard Title="日历" Margin="0,0,0,20" CanSwap="True" IsSwaped="True">
-    <Grid UseLayoutRounding="True">
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="215"></ColumnDefinition>
-            <ColumnDefinition Width="5"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <GridSplitter Grid.Column="1" Width="5" Margin="0,0,0,20" Opacity="0"
-            VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
-        <Calendar  HorizontalAlignment="Left" Margin="16,30,0,10" Grid.Row="0" Grid.Column="0"></Calendar>
-        <InkCanvas EditingMode="Ink" HorizontalAlignment="Right" Margin="0,30,15,10" Grid.Row="0" Grid.Column="2"
-            Width="1024" MaxHeight="768" MinHeight="100" Background="{DynamicResource ColorBrush5}">
-        </InkCanvas>
-    </Grid>
-</local:MyCard>
 
 <local:MyCard Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
     <StackPanel Margin="25,40,23,15" >
@@ -168,20 +135,20 @@
         </Grid.ColumnDefinitions>
         <local:MyCard Title="主页信息" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="0" >
                         <StackPanel Margin="25,40,23,15" >
-                                <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                                <StackPanel Orientation="Horizontal" Height="35" Width="800">
                                     <TextBlock  Margin="0,0,0,5" FontSize="20" Text="维护/制作 ：" HorizontalAlignment="Left" />
                                     <TextBlock  Margin="0,3,0,5" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
                                     Text="仕洋SY" />
                                 </StackPanel>
-                               <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                               <StackPanel Orientation="Horizontal" Height="35" Width="800">
                                    <TextBlock Margin="0,0,0,5" FontSize="20" Text="最后更新 ：" HorizontalAlignment="Left" />
                                    <TextBlock Margin="0,3,0,5" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
                                Text="2023/7/6" />
                                </StackPanel>
-                               <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                               <StackPanel Orientation="Horizontal" Height="35" Width="800">
                                    <TextBlock Margin="0,0,0,5" FontSize="20" Text="版本 ：" HorizontalAlignment="Left" />
                                    <TextBlock Margin="0,3,0,5" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
-                                    Text=" 1.2 " />
+                                    Text=" 1.2.1 " />
                                </StackPanel>
                             <local:MyButton Width="200"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
                              Text="反馈至QQ群" EventType="复制文本" EventData="835661493" ToolTip="因技术原因只好反馈至QQ" />
@@ -190,14 +157,17 @@
 
         <local:MyCard Title="更新日志" Margin="8,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
             <StackPanel Margin="25,40,23,15" >
-                <StackPanel Orientation="Horizontal" Height="50" Width="800">
-                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="18" Text="关于我们--第一行按钮的复制服务器地址" HorizontalAlignment="Left" />
+                <StackPanel Orientation="Horizontal" Height="25" Width="800">
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="1.页面信息与更新日志放在同一行" HorizontalAlignment="Left" />
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="50" Width="800">
-                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="18" Text="新增页面信息" HorizontalAlignment="Left" />
+                <StackPanel Orientation="Horizontal" Height="25" Width="800">
+                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Text="2.下载和日历放在仕洋的主页" HorizontalAlignment="Left" />
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="50" Width="800">
-                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="18" Text="新增反馈入口--反馈入口是QQ群" HorizontalAlignment="Left" />
+                <StackPanel Orientation="Horizontal" Height="25" Width="800">
+                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Text="3.名片 往期视频卡片默认打开" HorizontalAlignment="Left" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Height="25" Width="800">
+                     <TextBlock TextWrapping="Wrap" Margin="0,0,0,10" FontSize="15" Text="4.下架仕洋team服务器官网" HorizontalAlignment="Left" />
                 </StackPanel>
             </StackPanel>
         </local:MyCard>

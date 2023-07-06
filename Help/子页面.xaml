@@ -4,7 +4,7 @@
         <ColumnDefinition Width="1*" />
         <ColumnDefinition Width="1.6*" />
         </Grid.ColumnDefinitions>
-           <local:MyCard Title="名片" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="0">
+           <local:MyCard Title="名片" Margin="0,0,0,15" CanSwap="True" IsSwaped="False" Grid.Column="0">
                 <StackPanel Margin="25,40,23,15" >
                     <StackPanel Orientation="Horizontal" Height="50" Width="800">
                         <TextBlock  Margin="0,0,0,10" FontSize="20" Text="名字 ：" HorizontalAlignment="Left" />
@@ -32,7 +32,7 @@
                </StackPanel>
            </local:MyCard>
 
-          <local:MyCard Title="往期视频" Margin="20,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
+          <local:MyCard Title="往期视频" Margin="20,0,0,15" CanSwap="True" IsSwaped="False" Grid.Column="1" >
             <StackPanel Margin="25,40,23,15" >
                 <TextBlock Margin="0,0,0,10" FontSize="20" Text="置顶 ：" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"/>
 
@@ -69,21 +69,38 @@
         <ColumnDefinition Width="1.6*" />
         <ColumnDefinition Width="1*" />
         </Grid.ColumnDefinitions>
-        <local:MyCard Title="下载站" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+        <local:MyCard Title="下载站" Margin="0,0,0,15" CanSwap="False" IsSwaped="False" Grid.Column="0">
             <StackPanel Margin="25,40,23,15" >
-                <TextBlock  Margin="0,3,0,10" FontSize="15" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
-                Text=""/>
+                    <StackPanel Margin="25,40,23,15">
+                        <local:MyHint IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载（如百度网盘）" />
+                        <StackPanel Orientation="Horizontal" Height="50" Width="800">
+                            <TextBlock Text="下载链接：" VerticalAlignment="Center" />
+                            <local:MyTextBox Margin="3" HorizontalAlignment="Center" Name="web" Height="30" Width="380" />
+                        </StackPanel>
+                        <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载"
+                        Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Center" Padding="13,0,13,0" ColorType="Highlight"/>
+                    </StackPanel>
             </StackPanel>
-
-
-
-
-
-
-
-       </local:MyCard>
+        </local:MyCard>
+        <local:MyCard Title="日历" Margin="8,0,0,15" CanSwap="False" IsSwaped="False" Grid.Column="1">
+            <Grid UseLayoutRounding="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="215"></ColumnDefinition>
+                    <ColumnDefinition Width="5"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <GridSplitter Grid.Column="1" Width="5" Margin="0,0,0,20" Opacity="0"
+                    VerticalAlignment="Stretch" HorizontalAlignment="Center"/>
+                <Calendar  HorizontalAlignment="Left" Margin="16,30,0,10" Grid.Row="0" Grid.Column="0"></Calendar>
+                <InkCanvas EditingMode="Ink" HorizontalAlignment="Right" Margin="0,30,15,10" Grid.Row="0" Grid.Column="2"
+                    Width="1024" MaxHeight="768" MinHeight="100" Background="{DynamicResource ColorBrush5}">
+                </InkCanvas>
+            </Grid>
+        </local:MyCard>
 </Grid>
-
 
 
 
