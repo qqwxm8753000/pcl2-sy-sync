@@ -153,9 +153,9 @@
                                <StackPanel Orientation="Horizontal" Height="35" Width="800">
                                    <TextBlock Margin="0,0,0,5" FontSize="14" Text="版本 ：" HorizontalAlignment="Left" />
                                    <TextBlock Margin="0,1,0,5" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
-                                    Text=" 1.2.1 " />
+                                    Text=" 1.2.2 " />
                                </StackPanel>
-                            <local:MyButton Width="140"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
+                            <local:MyButton Width="120"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
                              Text="反馈至QQ群" EventType="复制文本" EventData="835661493" ToolTip="因技术原因只好反馈至QQ" />
                        </StackPanel>
         </local:MyCard>
@@ -163,11 +163,12 @@
         <local:MyCard Title="更新日志" Margin="8,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
             <StackPanel Margin="25,40,23,15" >
                 <StackPanel Orientation="Horizontal" Height="25" Width="800">
-                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="新增--自定义主页教学" HorizontalAlignment="Left" />
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="更新自定义主页教学" HorizontalAlignment="Left" />
                 </StackPanel>
             </StackPanel>
         </local:MyCard>
 </Grid>
+
 
 
 <!-- 
