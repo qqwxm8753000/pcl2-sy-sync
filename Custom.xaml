@@ -152,9 +152,8 @@
                                </StackPanel>
                                <StackPanel Orientation="Horizontal" Height="35" Width="800">
                                    <TextBlock Margin="0,0,0,5" FontSize="14" Text="版本 ：" HorizontalAlignment="Left" />
-                                   <TextBlock Margin="0,1,0,5" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left"
-                                    Text=" 1.2.3 " Foreground="Red"/>
-                                    <TextBlock Margin="0,0,0,5" FontSize="14" Text="(红色为紧急更新)" HorizontalAlignment="Left" />
+                                   <TextBlock Margin="0,1,0,5" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Text=" 1.2.3 " Foreground="Red"/>
+                                   <TextBlock Margin="0,0,0,5" FontSize="14" Text="(红色为紧急更新)" HorizontalAlignment="Left" />
                                </StackPanel>
                             <local:MyButton Width="120"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
                              Text="反馈至QQ群" EventType="复制文本" EventData="835661493" ToolTip="因技术原因只好反馈至QQ" />
