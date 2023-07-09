@@ -128,9 +128,9 @@
 <local:MyCard Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
     <StackPanel Margin="25,40,23,15" >
         <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1"
-        Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A2.xaml" Type="Clickable"/>
+        Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A2.JSON" Type="Clickable"/>
         <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
-        Title="自定义主页教学" Info="由仕洋提供" EventType="打开帮助" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A22.xaml" Type="Clickable"/>
+        Title="自定义主页教学" Info="由仕洋提供" EventType="打开帮助" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A22.JSON" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
  <Grid>
@@ -163,7 +163,9 @@
         <local:MyCard Title="更新日志" Margin="8,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
             <StackPanel Margin="25,40,23,15" >
                 <StackPanel Orientation="Horizontal" Height="25" Width="800">
-                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="紧急修复！！！——现在仕洋的主页和自定义主页教程可以正常使用！！" HorizontalAlignment="Left" Foreground="Red"/>
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="紧急修复！！！" HorizontalAlignment="Left" Foreground="Red"/>
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="——现在仕洋的主页和自定义主页教程可以正常使用！！" HorizontalAlignment="Left" Foreground="Red"/>
+
                 </StackPanel>
             </StackPanel>
         </local:MyCard>
