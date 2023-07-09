@@ -128,9 +128,9 @@
 <local:MyCard Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
     <StackPanel Margin="25,40,23,15" >
         <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1"
-        Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="D:\PCL\Help\子页面.JSON" Type="Clickable"/>
+        Title="仕洋的主页" Info="仕洋B站主页" EventType="打开帮助" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A2.xaml" Type="Clickable"/>
         <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
-        Title="自定义主页教学" Info="由仕洋提供" EventType="打开帮助" EventData="D:\PCL\Help\子页面2.JSON" Type="Clickable"/>
+        Title="自定义主页教学" Info="由仕洋提供" EventType="打开帮助" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A22.xaml" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
  <Grid>
@@ -148,12 +148,13 @@
                                <StackPanel Orientation="Horizontal" Height="35" Width="800">
                                    <TextBlock Margin="0,0,0,5" FontSize="14" Text="最后更新 ：" HorizontalAlignment="Left" />
                                    <TextBlock Margin="0,1,0,5" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
-                               Text="2023/7/7" />
+                               Text="2023/7/10" />
                                </StackPanel>
                                <StackPanel Orientation="Horizontal" Height="35" Width="800">
                                    <TextBlock Margin="0,0,0,5" FontSize="14" Text="版本 ：" HorizontalAlignment="Left" />
                                    <TextBlock Margin="0,1,0,5" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"
-                                    Text=" 1.2.2 " />
+                                    Text=" 1.2.3 " Foreground="Red"/>
+                                    <TextBlock Margin="0,0,0,5" FontSize="14" Text="(红色为紧急更新)" HorizontalAlignment="Left" />
                                </StackPanel>
                             <local:MyButton Width="120"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
                              Text="反馈至QQ群" EventType="复制文本" EventData="835661493" ToolTip="因技术原因只好反馈至QQ" />
@@ -163,7 +164,7 @@
         <local:MyCard Title="更新日志" Margin="8,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
             <StackPanel Margin="25,40,23,15" >
                 <StackPanel Orientation="Horizontal" Height="25" Width="800">
-                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="更新自定义主页教学" HorizontalAlignment="Left" />
+                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="紧急修复！！！——现在仕洋的主页和自定义主页教程可以正常使用！！" HorizontalAlignment="Left" Foreground="Red"/>
                 </StackPanel>
             </StackPanel>
         </local:MyCard>
