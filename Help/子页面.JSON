@@ -5,8 +5,7 @@
  "logo": "https://www.bilibili.com/favicon.ico?v=1",
  "ShowlnSearch": "true",
  "Keywords": "打开子页面",
- "IsEvent": true,
- "EventType": "打开文件",
+ "IsEvent": false,
  "EventData": "https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A2.xaml"
 
 }
