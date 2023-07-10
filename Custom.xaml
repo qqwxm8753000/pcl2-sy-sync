@@ -129,9 +129,9 @@
     <StackPanel Margin="25,40,23,15" >
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
                     <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="0,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Highlight"
-                    Text="仕洋主页" EventType="打开文件" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A2.xaml" />
+                    Text="仕洋主页" EventType="打开文件" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A2.JSON" />
                     <local:MyButton Width="160"  HorizontalAlignment="Center" Margin="8,4,10,0"  Height="35" Padding="13,0,13,0"
-                                    Text="自定义教学" EventType="打开文件" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A22.xaml"/>
+                                    Text="自定义教学" EventType="打开文件" EventData="https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A22.JSON"/>
         </StackPanel>
     </StackPanel>
 </local:MyCard>
