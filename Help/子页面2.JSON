@@ -4,7 +4,6 @@
  "Description": "由仕洋提供",
  "logo": "pack://application:,,,/images/Blocks/CommandBlock.png",
  "ShowlnSearch": "true",
- "Keywords": "打开子页面2",
- "IsEvent": false,
- "EventData": "https://gitee.com/csy0519/pcl2-sy/raw/main/Help/%E5%AD%90%E9%A1%B5%E9%9D%A22.xaml"
+ "Keywords": "打开子页面2"
+
 }

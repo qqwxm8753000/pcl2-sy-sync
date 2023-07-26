@@ -36,30 +36,10 @@
             <StackPanel Margin="25,40,23,15" >
                 <TextBlock Margin="0,0,0,10" FontSize="20" Text="置顶 ：" HorizontalAlignment="Left" Foreground="{DynamicResource ColorBrush2}"/>
 
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="什么？？？？？这个team在招人？还这么简单？？？" Info="置顶视频" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1xh4y137pt/" Type="Clickable" />
 
                 <TextBlock Margin="0,0,0,10" FontSize="20" Text="视频 ：" HorizontalAlignment="Left" />
                 <local:MyHint IsWarn="False" Margin="0,0,0,10" Text="注意 ：最上面的是最新的" HorizontalAlignment="Left" />
 
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="《新人UP联机 3》都疯啦！！啊啊啊啊！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV15W4y1f7Di/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="新人UP联机，第二期！终于来啦！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1mk4y1T7uZ/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="新人UP联机生存 第1期 《仕洋流浪记》" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1xX4y1p7rn/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="pcl2的自定义主页！来啦！！！！！！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV11g4y1P7Ui/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="《花 太阳 彩虹 你》MV" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1TL411B7QK/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="【法老】《ghost face》真的泰裤辣！！！" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1Xm4y1h7bM/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="1.19.2生存（3）NEW" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1514y1Z7xq/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="什么？小潮的秘密？" EventType="打开网页" EventData="https://www.bilibili.com/video/BV12L411S7tU/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="1.19.2生存2" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1AM4y1z7y3/" Type="Clickable" />
-
-                <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="新人UP有点紧张" EventType="打开网页" EventData="https://www.bilibili.com/video/BV1jM4y167oJ/" Type="Clickable" />
             </StackPanel>
          </local:MyCard>
     </Grid>
@@ -101,6 +81,7 @@
             </Grid>
         </local:MyCard>
 </Grid>
+
 
 
 
