@@ -1,7 +1,5 @@
 ﻿<local:MyCard Title="此设置，仅为仕洋team内部版本！看什么看，快去工作！" Margin="0,0,0,15" Height="35" CanSwap="False" IsSwaped="False" />
-
    <local:MyCard Title="关于我们" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
-
         <StackPanel Margin="25,40,23,15" >
             <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
                                 Text="成立时间 ：仕洋team成立于2023/3/14" />
@@ -132,21 +130,8 @@
         <TextBlock TextWrapping="Wrap" Margin="0,0,0,10"
         Text="有些人可能打不开这个，没事大概是路径问题，安装器已经在制作了别着急。" />
         <local:MyListItem Margin="-5,0,-5,8" Logo="pack://application:,,,/images/Blocks/CommandBlock.png"
-        Title="自定义主页教学" Info="由仕洋提供" EventType="打开帮助" EventData="D:\PCL\Help\子页面2.JSON" Type="Clickable"/>
+        Title="自定义主页教学" Info="由仕洋提供" EventType="打开帮助" EventData="D:\PCL\Help\子页面2.json" Type="Clickable"/>
     </StackPanel>
-</local:MyCard>
-<local:MyCard Title="下载站" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="0">
-            <StackPanel Margin="25,40,23,15" >
-                    <StackPanel Margin="25,40,23,15">
-                        <local:MyHint IsWarn="True" Text="链接必须为以http://或https://开头的网址，部分网址可能无法下载（如百度网盘）" />
-                        <StackPanel Orientation="Horizontal" Height="50" Width="800">
-                            <TextBlock Text="下载链接：" VerticalAlignment="Center" />
-                            <local:MyTextBox Margin="3" HorizontalAlignment="Center" Name="web" Height="30" Width="380" />
-                        </StackPanel>
-                        <local:MyButton EventType="下载文件" EventData="{Binding ElementName=web,Path=Text}" Text="开始下载"
-                        Margin="0,0,10,0" Width="140" Height="35" HorizontalAlignment="Center" Padding="13,0,13,0" ColorType="Highlight"/>
-                    </StackPanel>
-            </StackPanel>
 </local:MyCard>
 <local:MyCard Title="日历" Margin="0,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1">
             <Grid UseLayoutRounding="True">
@@ -192,7 +177,7 @@
                                    <TextBlock Margin="0,0,0,5" FontSize="14" Text="版本 ：" HorizontalAlignment="Left" />
                                    <TextBlock Margin="0,1,0,5" FontSize="13" FontWeight="Bold" HorizontalAlignment="Left" Foreground="#25D2F5
 "
-                                    Text=" 1.2.7 正式版" />
+                                    Text=" 1.2.8 正式版" />
                                </StackPanel>
                             <local:MyButton Width="120"  HorizontalAlignment="Center" Margin="0,4,10,8" Height="35" Padding="13,0,13,0" ColorType="Highlight"
                              Text="反馈至QQ群" EventType="复制文本" EventData="835661493" ToolTip="因技术原因只好反馈至QQ" />
@@ -201,15 +186,7 @@
 
         <local:MyCard Title="更新日志" Margin="8,0,0,15" CanSwap="True" IsSwaped="True" Grid.Column="1" >
             <StackPanel Margin="25,40,23,15" >
-                <StackPanel Orientation="Horizontal" Height="25" Width="800">
-                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="仕洋的主页移除" HorizontalAlignment="Left" />
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="25" Width="800">
-                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="小功能添加《撅仕洋》" HorizontalAlignment="Left" />
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="25" Width="800">
-                    <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="主页新增下载、日历功能" HorizontalAlignment="Left" />
-                </StackPanel>
+                <TextBlock TextWrapping="Wrap" Margin="0,0,0,2" FontSize="15" Text="删除下载站" HorizontalAlignment="Left" />
             </StackPanel>
         </local:MyCard>
 </Grid>
