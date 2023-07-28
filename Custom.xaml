@@ -20,10 +20,6 @@
                          <local:MyButton Width="300"  HorizontalAlignment="Center" Margin="8,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Red"
                               Text="进入仕洋team爱发电" EventType="打开网页" EventData="https://afdian.net/a/sy0519"/>
          </StackPanel>
-         <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                                  <local:MyButton Width="300"  HorizontalAlignment="Center" Margin="8,4,10,0" Height="35" Padding="13,0,13,0" ColorType="Highlight"
-                                       Text="自定义主页教学" EventType="打开网页" EventData="https://gitee.com/csy0519/pcl2-GK-SY/blob/main/README.md"/>
-         </StackPanel>
        </StackPanel>
     </local:MyCard>
 
@@ -39,6 +35,8 @@
                 EventType="打开网页" EventData="https://store.steampowered.com/" Type="Clickable"/>
             <local:MyListItem Margin="-5,0,-5,8" Logo="https://www.bilibili.com/favicon.ico?v=1" Title="仕洋B站主页" Info="仕洋B站主页"
                             EventType="打开网页" EventData="https://space.bilibili.com/1151723944" Type="Clickable"/>
+            <local:MyListItem Margin="-5,0,-5,8" Logo="https://cn-assets.gitee.com/assets/favicon-9007bd527d8a7851c8330e783151df58.ico" Title="自定义主页教学" Info="仕洋制作"
+                            EventType="打开网页" EventData="https://gitee.com/csy0519/pcl2-GK-SY/blob/main/README.md" Type="Clickable"/>
     </StackPanel>
 </local:MyCard>
 
